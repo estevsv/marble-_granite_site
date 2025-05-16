@@ -145,75 +145,106 @@
         <div></div>
     </section>
 
-    <section id="Produtos"
-        class="tw-flex tw-min-h-[60vh] tw-w-full tw-flex-col tw-place-items-center tw-gap-[10%] tw-bg-[#000] tw-p-8 tw-px-[20%] max-md:tw-h-max max-md:tw-min-h-[unset] max-md:tw-gap-[4%] max-md:tw-px-[5%]">
-        <h2 class="tw-text-4xl tw-font-semibold tw-text-white max-md:tw-text-2xl">
-            Produtos
-        </h2>
-        <!-- <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-text-center"></h2> -->
+    <section id="Produtos" class="tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-items-center tw-bg-[#000] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+    <h2 class="tw-text-4xl tw-font-semibold tw-text-white max-md:tw-text-2xl tw-mb-32">
+        Produtos
+    </h2>
 
-        <div class="carouselContainer"
-            class="tw-mt-[5%] tw-flex tw-w-full tw-flex-wrap tw-place-content-center tw-place-items-center tw-justify-around tw-gap-8 max-lg:tw-mt-4 max-lg:tw-flex-col max-lg:tw-gap-5 max-md:tw-mt-8">
-            <div class="slides">
-                <div
-                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg">
-                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
-                        <img src="./assets/images/homepage/Cuba-esculpida.jpg" alt=""
-                            class="tw-h-full tw-w-full tw-object-cover" />
-
-                        <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
-                            <h3 class="tw-text-lg tw-font-semibold">
-                                Cuba Esculpida
-                            </h3>
-                        </div>
-                    </div>
+    <div class="product-carousel-container tw-relative tw-w-full tw-max-w-5xl lg:tw-max-w-6xl xl:tw-max-w-7xl tw-mx-auto tw-mt-10 tw-mb-20">
+        <!-- Slides -->
+        <div class="slides fade"> <!-- Slide 1 -->
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/balcao-cozinha-branco.jpg" alt="Bancada com Ilha" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Bancada com Ilha</h3>
                 </div>
             </div>
-            <div class="slides">
-                <div
-                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg">
-                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
-                        <img src="./assets/images/homepage/Cuba-esculpida.jpg" alt=""
-                            class="tw-h-full tw-w-full tw-object-cover" />
-
-                        <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
-                            <h3 class="tw-text-lg tw-font-semibold">
-                                Cuba Esculpida
-                            </h3>
-                        </div>
-                    </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/pia-de-cozinha.jpg" alt="Pia de Cozinha" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Pia de Cozinha</h3>
                 </div>
             </div>
-            <div class="slides">
-                <div
-                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg">
-                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
-                        <img src="./assets/images/homepage/Cuba-esculpida.jpg" alt=""
-                            class="tw-h-full tw-w-full tw-object-cover" />
-
-                        <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
-                            <h3 class="tw-text-lg tw-font-semibold">
-                                Cuba Esculpida
-                            </h3>
-                        </div>
-                    </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/pia-de-banheiro.jpg" alt="Lavatório de Banheiro" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Lavatório de Banheiro</h3>
                 </div>
             </div>
         </div>
 
-        <!-- Controles -->
-        <a class="prev">❮</a>
-        <a class="next">❯</a>
+        <div class="slides fade"> <!-- Slide 2 -->
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/Soleiras-de-granito.jpg" alt="Soleira de Granito" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Soleira de Granito</h3>
+                </div>
+            </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/escada-granito.jpg" alt="Escada de Mármore" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Escada de Mármore</h3>
+                </div>
+            </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/nicho.jpg" alt="Nichos" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Nichos</h3>
+                </div>
+            </div>
+        </div>
 
-        <!-- Dots -->
-        <div class="dots-container">
+        <div class="slides fade"> <!-- Slide 2 -->
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/piso-de-granito.jpg" alt="Pisos de Granito" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Pisos de Granito</h3>
+                </div>
+            </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/mesa-granito.jpg" alt="Mesas" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Mesas</h3>
+                </div>
+            </div>
+            <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                    <img src="./assets/images/homepage/pia-de-lavanderia.jpg" alt="Bancadas no Geral" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                    <h3 class="tw-text-lg tw-font-semibold">Bancadas no Geral</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" style="left: -45px; z-index:10;">&#10094;</a>
+        <a class="next" style="right: -45px; z-index:10;">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dots-container tw-mt-6">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        </div>
-
-    </section>
+    </div>
+</section>
 
     <section
         class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 max-md:tw-flex-col max-md:tw-px-2 lg:tw-px-[10%]"
@@ -418,15 +449,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
     integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="slideshow.js" defer></script>
-<script defer>
-    window.addEventListener('DOMContentLoaded', () => {
-        const container = document.getElementById('carouselContainer')
-        new SlideShow(container, true, 6000)
-    })
-</script>
-
-<script src="./scripts/utils.js"></script>
+    <script src="./scripts/utils.js"></script>
+    <script>    // Initialize Product Carousel
+        const productCarouselContainer = document.querySelector('.product-carousel-container');
+        if (productCarouselContainer) {
+            new SlideShow(productCarouselContainer, true, 6000);
+            console.log('Product carousel initialized with autoNext and timeout.');
+        } else {
+            console.log('Product carousel container (.product-carousel-container) not found.');
+        }
+    </script>
 <script src="index.js"></script>
 
 </html>

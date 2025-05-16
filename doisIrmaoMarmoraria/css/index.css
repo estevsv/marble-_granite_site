@@ -298,3 +298,70 @@ q::after {
     }
 
 }
+
+/* Estilos para o carrossel de produtos */
+.product-carousel-container .slides {
+    display: none; /* Oculta por padrão, JS controla a exibição */
+    justify-content: space-around; /* Espaça os 3 produtos */
+    align-items: flex-start;
+    gap: 1rem; /* Espaçamento entre os cards de produto */
+    width: 100%;
+}
+
+.product-carousel-container .slides.active-slide {
+    display: flex; /* Mostra o slide ativo como flex container */
+}
+
+.product-card {
+    flex: 0 0 calc(33.333% - 1rem); /* Cada card ocupa aprox. 1/3 do espaço, considerando o gap */
+    max-width: calc(33.333% - 1rem);
+    box-sizing: border-box;
+}
+
+/* Ajustes responsivos para o carrossel */
+@media (max-width: 1024px) {
+    .product-carousel-container .slides {
+        flex-direction: column; /* Empilha os produtos em telas menores */
+        align-items: center;
+    }
+    .product-card {
+        flex: 0 0 80%; /* Card ocupa mais espaço em telas menores */
+        max-width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+
+.product-carousel-container .prev,
+.product-carousel-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.product-carousel-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.product-carousel-container .prev:hover,
+.product-carousel-container .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+

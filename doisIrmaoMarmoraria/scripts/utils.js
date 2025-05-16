@@ -63,7 +63,7 @@ class SlideShow{
             dots[i].className = dots[i].className.replace("active", "")
         }
 
-        slides[this.slideIndex].style.display = "block"
+        slides[this.slideIndex].style.display = "flex"
         dots[this.slideIndex].className += " active"
 
         if (this.autoNext){
