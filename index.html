@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dois Irmãos Marmoraria</title>
+    <meta name="description" content="Site Dois Irmãos Mármore e Granito " />
+
+    <meta property="og:image" content="www.doisirmaosmarmoraria.com.br" />
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+
+    <link rel="stylesheet" href="./css/tailwind-build.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#ffffff]">
+    <header
+        class="tw-fixed tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-lg:tw-mr-auto lg:tw-justify-around">
+        <div class="tw-absolute tw-left-0 tw-top-0 tw-z-[-1] tw-h-0 tw-w-full tw-bg-white tw-shadow-md"
+            id="expanding-header-bg">
+        </div>
+
+        <div class="tw-flex tw-w-max tw-place-items-center tw-gap-3">
+            <div class="tw-h-[60px] tw-w-[80px] tw-p-[4px]">
+                <a href="#Inicio"><img src="./assets/logo.png" alt="logo" class="tw-object tw-h-full tw-w-full" /></a>
+            </div>
+        </div>
+        <div class="collapsible-header animated-collapse" id="collapsed-items">
+            <div
+                class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links" href="#Sobre"> Sobre </a>
+                <a class="header-links" href="#Produtos"> Produtos </a>
+                <a class="header-links" href="#Localizacao"> Localização </a>
+            </div>
+            <div
+                class="tw-flex tw-place-items-center tw-gap-[20px] tw-text-xl max-lg:tw-w-full max-lg:tw-place-content-center max-lg:!tw-text-white">
+                <a href="https://www.instagram.com/dois.irmaos_marmoraria/" target="_blank" rel="no-referrer" area-label="instagram"
+                    class="header-links tw-transition-colors tw-duration-[0.3s]">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl lg:tw-hidden"
+            onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
+        </button>
+    </header>
+
+    <section
+        class="tw-relative tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-h-[100dvh]"
+        id="Inicio">
+        <img src="./assets/images/homepage/hero-image.jpg" alt=""
+            class="tw-h-full tw-w-full tw-scale-[1.3] tw-object-cover" id="hero-image" />
+        <div
+            class="overlay-gradient tw-absolute tw-top-0 tw-h-full tw-w-full max-lg:tw-z-[2] max-lg:!tw-bg-[#1c1c1ca2]">
+        </div>
+
+        <div
+            class="tw-absolute tw-left-[15%] tw-top-[50%] tw-z-[5] tw-flex tw-min-w-[320px] tw-max-w-[500px] tw-translate-y-[-50%] tw-flex-col tw-gap-4 tw-p-2 tw-text-white max-md:tw-left-[50%] max-md:tw-translate-x-[-50%] max-md:tw-place-content-center max-md:tw-place-items-center">
+            <h1 class="khula-font tw-text-xl tw-font-semibold max-md:tw-text-center max-md:tw-text-base">
+                Mármore . Granito . Acabamentos de alto padrão
+            </h1>
+
+            <h2 class="khula-font tw-text-5xl tw-font-bold tw-uppercase max-md:tw-text-3xl">
+                Excelência em pedras naturais para sua obra
+            </h2>
+            <span class="tw-mt-2 tw-w-full tw-text-justify tw-text-lg max-md:tw-text-base">
+                Transformamos ambientes com elegância e durabilidade.
+                Trabalhamos com materiais nobres, sob medida para o seu projeto dos sonhos.
+            </span>
+            <div class="tw-mt-3 tw-flex tw-w-full tw-gap-[2%] max-md:tw-flex-col max-md:tw-gap-4">
+                <a href="https://wa.me/5527999940536" target="_blank" rel="noreferrer"
+                    class="tw-flex tw-max-h-[50px] tw-min-w-[180px] tw-place-content-center tw-place-items-center tw-gap-2 tw-bg-white tw-p-3 tw-px-[20px] tw-text-black tw-transition-colors tw-duration-[0.3s] hover:tw-bg-[#100f0f] hover:tw-text-[#fff] max-md:tw-min-w-[100px]">
+                    <span>Peça seu orçamento</span>
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sobre"
+        class="tw-flex tw-min-h-[60vh] tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+        <div
+            class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[300px] max-md:tw-w-[300px]">
+            <img src="./assets/images/homepage/top-view.png" alt="" class="tw-w-full tw-object-cover" />
+        </div>
+        <div class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center">
+            <h2 class="primary-text-color tw-text-3xl tw-font-medium tw-uppercase max-md:tw-text-2xl">
+                Dois Irmãos Marmoraria
+            </h2>
+            <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
+                Na Dois Irmãos, a rocha é nossa arte, e a excelência, nosso compromisso. Atuamos no segmento de mármore
+                e granito
+                com a missão de transformar matéria-prima nobre em obras que inspiram elegância, durabilidade e
+                autenticidade.
+                Combinando tradição artesanal e tecnologia de ponta, oferecemos soluções sob medida para projetos
+                residenciais,
+                comerciais e corporativos. Cada peça é cuidadosamente selecionada, lapidada e instalada por uma equipe
+                altamente
+                especializada, garantindo um acabamento impecável e alinhado aos mais altos padrões de qualidade. Nos
+                orgulhamos
+                de atender arquitetos, designers e clientes finais com atenção aos detalhes, pontualidade e um profundo
+                respeito pela
+                estética e funcionalidade de cada ambiente. Valorizamos relações construídas com transparência,
+                confiança e dedicação
+                em cada etapa do processo.
+
+            </div>
+        </div>
+        <div></div>
+    </section>
+
+    <section id="Produtos" class="tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-items-center tw-bg-[#000] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+        <h2 class="tw-text-4xl tw-font-semibold tw-text-white max-md:tw-text-2xl tw-mb-32">
+            Produtos
+        </h2>
+
+        <div class="product-carousel-container tw-relative tw-w-full tw-max-w-5xl lg:tw-max-w-6xl xl:tw-max-w-7xl tw-mx-auto tw-mt-10 tw-mb-20">
+            <div class="slides fade">
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/balcao-cozinha-branco.jpg" alt="Bancada com Ilha" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Bancada com Ilha</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/pia-de-cozinha.jpg" alt="Pia de Cozinha" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Pia de Cozinha</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/pia-de-banheiro.jpg" alt="Lavatório de Banheiro" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Lavatório de Banheiro</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/Soleiras-de-granito.jpg" alt="Soleira de Granito" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Soleira de Granito</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/escada-granito.jpg" alt="Escada de Mármore" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Escada de Mármore</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/nicho.jpg" alt="Nichos" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Nichos</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/piso-de-granito.jpg" alt="Pisos de Granito" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Pisos de Granito</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/mesa-granito.jpg" alt="Mesas" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Mesas</h3>
+                    </div>
+                </div>
+                <div class="product-card tw-flex tw-h-auto sm:tw-h-[380px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg tw-rounded-lg">
+                    <div class="tw-relative tw-h-[200px] sm:tw-h-[280px] tw-w-full tw-bg-white">
+                        <img src="./assets/images/homepage/pia-de-lavanderia.jpg" alt="Bancadas no Geral" class="tw-h-full tw-w-full tw-object-cover tw-rounded-t-lg" />
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center">
+                        <h3 class="tw-text-lg tw-font-semibold">Bancadas no Geral</h3>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" style="left: -45px; z-index:10;">&#10094;</a>
+            <a class="next" style="right: -45px; z-index:10;">&#10095;</a>
+
+            <div class="dots-container tw-mt-6">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="Localizacao" class="tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-items-center tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+        <div class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-5 tw-mb-16">
+            <h2 class="primary-text-color tw-text-3xl">Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.0328006686073!2d-40.201089599999996!3d-20.0490688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb7f1b13d89ea05%3A0xb4ba10094fcba2ec!2sMarmoraria%20Dois%20Irm%C3%A3os!5e0!3m2!1spt-BR!2sbr!4v1747495023546!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+        </div>
+    </section>
+    <a href="https://wa.me/5527999940536" target="_blank" class="whatsapp-button" aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.003 2.003c-7.732 0-14 6.268-14 14 0 2.464.637 4.841 1.846 6.955l-1.92 7.042 7.213-1.888a13.934 13.934 0 0 0 6.861 1.73c7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.794c-2.173 0-4.294-.576-6.152-1.662l-.44-.257-4.282 1.121 1.145-4.207-.285-.449a11.787 11.787 0 0 1-1.799-6.318c0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12zm6.364-8.35c-.35-.175-2.074-1.024-2.396-1.14-.322-.117-.558-.175-.793.175-.234.35-.91 1.14-1.117 1.375-.205.234-.41.263-.762.088-.352-.175-1.488-.55-2.834-1.757-1.046-.931-1.752-2.081-1.958-2.432-.205-.351-.022-.54.152-.715.155-.155.35-.41.526-.615.176-.205.234-.351.352-.586.117-.234.059-.439-.029-.614-.088-.175-.793-1.912-1.085-2.626-.285-.684-.576-.59-.793-.602a6.119 6.119 0 0 0-.675-.014c-.234 0-.615.088-.938.439-.322.351-1.228 1.2-1.228 2.926 0 1.726 1.256 3.392 1.431 3.626.175.234 2.468 3.771 5.975 5.286.836.36 1.49.575 1.999.735.84.267 1.605.229 2.21.14.674-.101 2.074-.85 2.367-1.671.293-.82.293-1.524.205-1.671-.088-.146-.322-.234-.674-.41z"/>
+        </svg>
+    </a>
+
+    <footer class="tw-flex tw-w-full tw-flex-wrap tw-justify-around tw-gap-8 tw-bg-[#000] tw-p-[5%] tw-px-[10%] tw-text-white max-lg:tw-flex-col max-lg:tw-items-center">
+  <div class="tw-flex tw-flex-col tw-items-center tw-gap-4">
+    <img src="./assets/logo_footer.png" alt="Logo Dois Irmãos Marmoraria" class="tw-w-[60px] tw-h-[60px]" />
+    <p class="tw-text-center tw-text-sm">
+      Excelência em mármore e granito para seu projeto.
+    </p>
+    <a href="https://wa.me/5527999940536" target="_blank" class="tw-flex tw-items-center tw-gap-2 hover:tw-text-gray-400">
+      <i class="bi bi-whatsapp text-xl"></i>
+      (27) 99994-0536
+    </a>
+  </div>
+
+  <div class="tw-flex tw-flex-col tw-gap-3">
+    <h3 class="tw-text-lg tw-font-semibold">Navegação</h3>
+    <a href="#Inicio" class="hover:tw-text-gray-400">Início</a>
+    <a href="#Sobre" class="hover:tw-text-gray-400">Sobre</a>
+    <a href="#Produtos" class="hover:tw-text-gray-400">Produtos</a>
+    <a href="#Localizacao" class="hover:tw-text-gray-400">Localização</a>
+  </div>
+
+  <div class="tw-flex tw-flex-col tw-gap-3">
+    <h3 class="tw-text-lg tw-font-semibold">Produtos</h3>
+    <span>Bancadas</span>
+    <span>Pias</span>
+    <span>Escadas</span>
+    <span>Nichos</span>
+    <span>Pisos e Soleiras</span>
+  </div>
+
+  <div class="tw-flex tw-flex-col tw-items-center tw-gap-3">
+    <h3 class="tw-text-lg tw-font-semibold">Siga-nos</h3>
+    <div class="tw-flex tw-gap-4 tw-text-2xl">
+      <a href="https://www.instagram.com/dois.irmaos_marmoraria/" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/utils.js"></script>
+    <script>    // Initialize Product Carousel
+        const productCarouselContainer = document.querySelector('.product-carousel-container');
+        if (productCarouselContainer) {
+            new SlideShow(productCarouselContainer, true, 6000);
+            console.log('Product carousel initialized with autoNext and timeout.');
+        } else {
+            console.log('Product carousel container (.product-carousel-container) not found.');
+        }
+    </script>
+<script src="index.js"></script>
+
+</html>

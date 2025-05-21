@@ -25,7 +25,7 @@ gsap.to(expandingBg, {
     height: "100%",
     duration: 3,
     scrollTrigger: {
-        trigger: "#hero-section",
+        trigger: "#Inicio",
         // pin: true, 
         start: "50px 10px", // when the top of the trigger hits the top of the viewport
         end: "80px 50px",
@@ -36,7 +36,7 @@ gsap.to(expandingBg, {
 })
 
 ScrollTrigger.create({
-    trigger: "#hero-section",
+    trigger: "#Inicio",
     start: "50px 10px", // when the top of the trigger hits the top of the viewport
     end: "60px 40px",
     scrub: 1,
@@ -66,7 +66,9 @@ ScrollTrigger.create({
 
 
 const reviewContainer = document.querySelector(".review-container")
-const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
+if (reviewContainer) {
+    const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
+}
 
 
 function onHeaderClickOutside(e) {
